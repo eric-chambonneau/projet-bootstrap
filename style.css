@@ -1,0 +1,88 @@
+html {
+  scroll-behavior: smooth;
+}
+h2,
+h3,
+h4,
+nav-item,
+#transition,
+footer {
+  text-align: center;
+}
+/**********************HEADER********************/
+header {
+  background: url(./media/main.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 100vh;
+  border-radius: 0px 0px 20px 20px;
+  margin-bottom: 40px;
+}
+h1 {
+  font-size: 5em;
+  padding: 200px 0 0 20%;
+  text-shadow: -3px 3px 2px #bcf5a9;
+  animation: titre ease 5s;
+}
+@keyframes titre {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 350px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/****************** LEFT PART ******************/
+#leftPart {
+  background-color: #bcf5a9;
+  border-radius: 20px;
+  padding: 25px;
+}
+.elements {
+  padding: 70px 0;
+}
+.elements img {
+  border-radius: 50%;
+  width: 200px;
+}
+.elements p {
+  font-size: 1.2em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  padding-right: 20px;
+}
+.elements .button {
+  text-align: right;
+  margin: 15px 4% 0 0;
+}
+/******************************RIGHT PART**************************************/
+#rightPart {
+  background-color: blue;
+  border-radius: 20px;
+  padding: 20px;
+}
+.tips {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+}
+.tips h4 {
+  position: relative;
+  color: green;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: 1px 1px 0 #bcf5a9, 1px -1px 0 #bcf5a9, -1px -1px 0 #bcf5a9,
+    1px 0px 0 #bcf5a9, 0px 1px 0 #bcf5a9, -1px 0px 0 #bcf5a9, 0px -1px 0 #bcf5a9;
+}
+.tips:hover {
+  transform: scale(1.08);
+  opacity: 0.7;
+  transition: ease-out 0.2s;
+}
+
+#rateau {
+  padding: 50px;
+}
